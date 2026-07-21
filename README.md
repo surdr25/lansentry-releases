@@ -1,26 +1,53 @@
-# LANsentry — Releases
+# LANsentry
 
-This repository hosts the official installer downloads for **LANsentry**, a
-Windows network security scanner (host discovery, port scan, CVE
-prioritization, AI analysis, active pentest).
+**Network security scanning for Windows — host discovery, CVE prioritization, AI analysis, and active pentesting in a single standalone app. No cloud, all data stays local.**
 
-**This repository contains no source code.** LANsentry's source is closed /
-private; this repo exists solely so release binaries can be distributed via
-a public, trusted `github.com` URL alongside the primary download at
-[lansentry.com](https://lansentry.com).
+🔗 **Website & full feature list: [lansentry.com](https://lansentry.com)**
+
+---
+
+## What is this repository?
+
+This repo hosts **only the release binaries** for LANsentry — the application's
+source code is closed/private. It exists to give users a trusted, publicly
+verifiable download source (with SHA256 checksums) alongside the primary
+download at [lansentry.com](https://lansentry.com).
+
+**👉 [Download the latest installer](../../releases/latest)**
+
+## What LANsentry does
+
+- **Smart network discovery** — ICMP ping, TCP-connect fallback for firewalled hosts, plus SSDP/mDNS for UPnP and Bonjour devices with friendly names
+- **Native port scanner** — parallel TCP scan with banner grabbing and version detection, no nmap required (optional nmap integration adds OS detection)
+- **CVE prioritization** — CISA KEV flags actively-exploited vulnerabilities, EPSS scores exploitation probability — not just raw CVSS
+- **AI-powered analysis** — Anthropic, OpenAI, OpenRouter, or local Ollama — returns an executive summary and a remediation plan
+- **Active pentest module** — nmap NSE vulnerability scripts + 5,000+ nuclei templates (SSL/TLS, SMB, default credentials, HTTP security headers, and more)
+- **WAN scan** — detects your public IP and checks which ports/CVEs are exposed from the outside
+- **Network topology map** — visual host map with severity coloring, exportable as PNG/SVG
+- **Reports & export** — HTML, Excel, JSON, CSV, PDF — all generated locally, no cloud round-trip
+- **Device fingerprinting** — classifies hosts into router, server, NAS, printer, IP camera, smart home, and more
+- **Wake-on-LAN**, persistent device labels/groups, scan history with diffing, scheduled automatic scans, SNMP interface stats, DHCP/ARP overview, and firewall/port-knock detection
+- **Bilingual UI** (English/German) — switchable anytime in Settings
+- **7-day free trial**, then a per-device license via Polar.sh
+
+See the full feature breakdown, screenshots and FAQ at **[lansentry.com](https://lansentry.com)**.
 
 ## Verifying a download
 
-Each release lists the installer's SHA256 checksum. On Windows, verify with:
+Every release lists the installer's SHA256 checksum in its notes. On Windows, verify with:
 
 ```powershell
 Get-FileHash LANsentry-Setup-X.Y.Z.exe -Algorithm SHA256
 ```
 
-Compare the output against the checksum shown on the [Releases page](../../releases)
+Compare the output against the checksum shown on the [latest release](../../releases/latest)
 or on [lansentry.com](https://lansentry.com).
 
-## More info
+## Support & contact
 
 - Website: https://lansentry.com
-- Support: dirk@247-it.de
+- Support: mail@247-it.de
+
+---
+
+*LANsentry is developed and published by 247-IT. This repository intentionally contains no application source code.*
