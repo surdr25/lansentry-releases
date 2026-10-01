@@ -26,11 +26,24 @@ download at [lansentry.com](https://lansentry.com).
 - **Network topology map** — visual host map with severity coloring, exportable as PNG/SVG
 - **Reports & export** — HTML, Excel, JSON, CSV, PDF — all generated locally, no cloud round-trip
 - **Device fingerprinting** — classifies hosts into router, server, NAS, printer, IP camera, smart home, and more
+- **Background monitoring** — an optional Windows service keeps scanning while the app is closed and alerts via email, Slack or Telegram when a new device appears or a device goes offline
 - **Wake-on-LAN**, persistent device labels/groups, scan history with diffing, scheduled automatic scans, SNMP interface stats, DHCP/ARP overview, and firewall/port-knock detection
 - **Bilingual UI** (English/German) — switchable anytime in Settings
-- **7-day free trial**, then a per-device license via Polar.sh
+- **7-day free trial**, then **€69 one-time per device** (no subscription) via Polar.sh — [pricing details](https://lansentry.com/pricing.txt)
 
 See the full feature breakdown, screenshots and FAQ at **[lansentry.com](https://lansentry.com)**.
+
+## Guides
+
+Practical network-security guides on lansentry.com (English and German):
+
+- [CVE, CVSS, EPSS and KEV explained](https://lansentry.com/guides/cve-cvss-epss-kev-explained.html) — prioritize patching by real-world exploitation
+- [How to find and close open ports](https://lansentry.com/guides/open-ports-guide.html)
+- [How to find unknown devices on your network](https://lansentry.com/guides/unknown-devices-network.html)
+- [Secure Windows network checklist](https://lansentry.com/guides/secure-windows-network-checklist.html)
+- [Network pentesting and the law](https://lansentry.com/guides/network-pentesting-legal-guide.html)
+- [Network topology mapping](https://lansentry.com/guides/network-topology-mapping.html)
+- [All guides in German](https://lansentry.com/de/guides/)
 
 ## Verifying a download
 
